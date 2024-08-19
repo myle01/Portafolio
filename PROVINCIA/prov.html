@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Nacional Darién - Panamá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #09941b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }   
+        .cuadricula {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .cuadricula img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .cuadricula img:hover {
+            opacity: 0.8;
+        }
+        #Descubre iframe {
+            margin: 0 auto;
+            display: block;
+            width: 800px;
+            height: 450px;
+        }
+
+        #llegar .map-container {
+            margin: 0 auto;
+            text-align: center;
+        }
+        #llegar iframe {
+            width: 800px;
+            height: 450px;
+            border: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Parque Nacional Darién</h1>
+        <nav>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#Descubre">Descubre</a>
+                <a href="#llegar">Cómo Llegar</a>
+                <a href="#recomendaciones">Recomendaciones</a>
+                <a href="#enlaces">Enlaces</a>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>¡Bienvenido al Parque Nacional Darién!</h2>
+            <p>El Parque Nacional Darién es un ambiente selvático al que se puede llegar de más de una forma para apreciar impresionantes paisajes de selva virgen. Desde la Ciudad de Panamá vía aérea hasta la comunidad más cercana al Parque, El Real. Si prefiere la aventura puede trasladarse por carretera hasta la comunidad de Yaviza para luego trasladarse hasta El Real en bote.<br><br>
+                El Parque es un sitio de aventura y experiencia, el contacto con la selva y los grupos indígenas es una mezcla extraordinaria de belleza y misterio. Dentro del bosque es posible la observación de aves, recorridos por sus ríos o simplemente caminar, apreciar los bailes y costumbres de los indígenas.
+            </p>
+            <div class="cuadricula">
+                <img src="rana.jpg" alt="Imagen 1">
+                <img src="senderos.webp" alt="Imagen 2">
+                <img src="senderos1.webp" alt="Imagen 3">
+            </div>
+        </section>
+
+        <section id="Descubre">
+            <h2>Descubre</h2>
+            <p>Además de la observación de aves, el Parque Nacional Darién te ofrece un sinfín de actividades para completar tu experiencia: senderismo, paseos en bote, visitas a comunidades indígenas y mucho más.<br><br>
+                Adéntrate en este santuario de la biodiversidad, donde más de 579.000 hectáreas de exuberante selva tropical te esperan para revelarte sus secretos. Recorre senderos sin explorar y déjate sorprender por la rica variedad de aves, muchas de ellas especies endémicas que solo podrás encontrar en este mágico lugar.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MwLhPQM6P2A?si=6jIvdmQBfnzB_TEx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </p>
+        
+        </section>
+
+        <section id="llegar">
+            <h2>Cómo Llegar</h2>
+            <p>Instrucciones para llegar al parque...</p>
+            <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d506109.28984059015!2d-77.8424937!3d7.6854205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e51dd76dbf705e5%3A0xdb8adccd03a79028!2sParque%20Nacional%20del%20Dari%C3%A9n!5e0!3m2!1ses!2spa!4v1717989816230!5m2!1ses!2spa" width="600" height="450" style="border:0;" allowfullscreen="1200px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="recomendaciones">
+            <h2>Recomendaciones</h2>
+            <ul>
+                <li>Reserva tu alojamiento y transporte con antelación, especialmente si viajas en temporada alta.</li>
+                <li>Opta por ropa cómoda y transpirable, así como calzado resistente para caminar por los senderos.</li>
+                <li>No dejes residuos en el parque, respeta la flora y fauna y sigue las normas establecidas por las autoridades del parque.</li>
+                <li>Contrata un guía local con experiencia en observación de aves.</li>
+                <li>Respeta la cultura y tradiciones de las comunidades indígenas.</li>
+            </ul>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces</h2>
+            <ul>
+                <li><a href="https://national-parks.org/panama/darien">Sitio web oficial del Parque Nacional Darién</a></li>
+                <li><a href="https://www.tripadvisor.es/Attraction_Review-g2651532-d300016-Reviews-Darien_National_Park-Darien_Province.html">Tripadvisor</a></li>
+                <li><a href="https://www.visitcentroamerica.com/visitar/parque-nacional-darien/">Turismo de Centroamerica</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Parque Nacional Darién. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

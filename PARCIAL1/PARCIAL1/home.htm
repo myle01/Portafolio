@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy X Family</title>
+</head>
+<style>
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 135px;
+            width: 100px;
+            height: 100px;
+        }
+        .logo-container img {
+            width: 100px;
+            height: 40px;
+        }
+        .inicio {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 50px;
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        form {
+            display: flex;
+        }
+        form input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex-grow: 1;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .banner {
+            text-align: center;
+            margin-bottom: 40px;
+            padding:0 135px;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+        .banner img:hover {
+            opacity: 0.8;
+        }
+        .cuadricula1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+
+        }
+        .cuadricula1 img {
+            width: 20%;
+            height: 150px;
+            object-fit: cover;
+            margin: 5px;
+            cursor: pointer;
+
+        }
+        .cuadricula1 img:hover {
+            opacity: 0.8;
+        }
+        .personajes-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .personajes {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+        .cuadricula2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left;
+            padding: 0 130px;
+        }
+        .cuadricula2 img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            margin: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        .cuadricula2 img:hover {
+            opacity: 0.8;
+        }
+</style>
+<body>
+    <header>
+        <div class="logo-container">
+                <img src="Spy_×_Family_logo.png" alt="Logo">
+        </div>
+        <div class="container">
+            <a href="#Inicio" class="inicio"></a>
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Personajes">Personajes</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <form action="#inicio">
+                <input type="text" placeholder="Buscar imagen...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="banner4.jpg" alt="Spy X Family">
+        </section>
+
+        <section class="Inicio">
+            <div class="cuadricula1">
+                <div class="serie">
+                    <img src="imagen1.webp" alt="imagen1">
+                    <img src="imagen2.jpg" alt="imagen2">
+                    <img src="imagen3.avif" alt="imagen3">
+                    <img src="imagen4.jpg" alt="imagen4">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="Personajes">
+                <div class="personajes-container">
+                <div class="personajes">Personajes</div>
+            </div>
+            <div class="cuadricula2">
+                <img src="twith1.jpg" alt="Imagen 1">
+                <img src="ania.webp" alt="Imagen 2">
+                <img src="yor2.webp" alt="Imagen 3">
+                <img src="bond.jpg" alt="Imagen 4">
+            </div>
+          </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Spy X family</p>
+    </footer>
+</body>
+</html>

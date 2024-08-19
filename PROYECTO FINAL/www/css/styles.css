@@ -1,0 +1,163 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-pared-estudio-textura-hormigon-azul-grunge-vintage-vineta_1258-28389.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: skyblue;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: gray;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: gray;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.main-nav img {
+    width: auto;
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Centrar el Buscador */
+.main-nav .search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.main-nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.main-nav .search-container button {
+    padding: 6px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-nav .search-container button:hover {
+    background: #ccc;
+}
+
+/* Alinear enlaces a la derecha */
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-nav ul li a:hover {
+    color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-nav img {
+        margin-bottom: 10px;
+    }
+    .main-nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+    .main-nav .search-container {
+        width: 100%;
+        justify-content: space-between;
+        left: 0;
+        transform: none;
+    }
+    .main-nav input[type=text], .main-nav .search-container button {
+        width: calc(50% - 10px);
+    }
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: 60%;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

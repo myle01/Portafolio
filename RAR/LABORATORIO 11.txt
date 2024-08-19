@@ -1,0 +1,96 @@
+LABORATORIO 11 - PROGRA.
+Clases y Objetos 
+• Define una clase y un objeto en tus propias palabras.
+	Una clase es un plano o molde que define los atributos y los métodos que tendrán los objetos creados a 	partir de ella. 
+
+	Un objeto es una instancia concreta de una clase. Es una entidad tangible que tiene un estado y un comportamiento.
+
+• ¿Qué propiedades y métodos tenía la clase Coche que creaste?
+	En las propiedades encontramos "$color" y "$marca".
+	En los métodos encontramos "arrancar()" y "detener()"
+
+• ¿Cómo se crea un objeto en PHP? Proporciona un ejemplo.
+	Un objeto se crea usando la palabra clave new  seguida del nombre de la clase y paréntesis. 
+	Ejemplo:
+	<?php
+	$coche = new Coche ("Verde", "Nissan");
+	?>
+
+• Describe un ejemplo de la vida real que podría ser representado por una 
+clase y un objeto en programación. 
+Persona: 	Propiedades: nombre, edad, dirección
+		Métodos: caminar, hablar, comer.
+Perro: 		Propiedades: raza, color, tamaño
+		Métodos: ladrar, jugar, comer.
+
+Herencia 
+• ¿Qué es la herencia en la programación orientada a objetos? 
+	La herencia es un mecanismo en la programación orientada a objetos que permite a una clase derivada heredar propiedades y métodos de otra clase base. Esto facilita la reutilización del código y la creación de jerarquías de clases.
+
+• ¿Qué clase creó la clase CocheDeportivo y qué propiedades y métodos 
+heredó de la clase Coche?
+	La clase CocheDeportivo  hereda de la clase  Coche . Heredó las propiedades $color y  $marca , y los métodos  __construct() ,  getColor() ,  setColor() ,  getMarca() ,  setMarca() , y  mostrarInfo() .
+
+• Explica cómo la clase CocheDeportivo añadió funcionalidad adicional a la 
+clase Coche. 
+	La clase CocheDeportivo  añadió una nueva propiedad  $velocidadMaxima  y un nuevo método  mostrarInfo() , que extiende la funcionalidad del método  mostrarInfo()  de la clase base  Coche  para incluir la información de la velocidad máxima.
+
+• Proporciona un ejemplo de herencia en un contexto diferente al del coche 
+(por ejemplo, animales, dispositivos electrónicos, etc.). 
+	Clase base: Animal
+ 	Propiedades:
+ 		$nombre: Nombre del animal.
+ 		$edad: Edad del animal.
+ 	Métodos:
+ 		__construct ($nombre, $edad) : Constructor para inicializarlas propiedades.
+ 		hacerSonido () : Método abstracto para hacer un sonido.
+
+ 	Clase derivada: Perro
+ 	Propiedades adicionales:
+ 		$raza: Raza del perro.
+		Métodos adicionales:
+		hacerSonido () : Implementa el método abstracto de la clase base para hacer un sonido de ladrido.
+
+Polimorfismo 
+• Define polimorfismo en el contexto de la programación orientada a objetos. 
+	El polimorfismo es la capacidad de diferentes clases para ser tratadas como una instancia de la misma clase a través de una interfaz común. Específicamente, permite que un mismo método tenga diferentes implementaciones en diferentes clases.
+
+• ¿Cómo demostraste el polimorfismo en la clase Coche y CocheDeportivo? 
+	Se demostró mediante la redefinición del método  arrancar() en ambas clases. La clase Coche  tiene su propia implementación de  arrancar() , mientras que la clase  	CocheDeportivo  tiene una implementación diferente del mismo método, proporcionando comportamiento específico para un coche deportivo.
+
+Encapsulamiento 
+• Explica qué es el encapsulamiento y por qué es importante en la 
+programación orientada a objetos. 
+	El encapsulamiento es un principio de la POO que restringe el acceso directo a 	algunas de las propiedades y métodos de un objeto, y solo permite modificarlos a través de métodos públicos. Es importante porque:
+		- Protege la integridad de los datos del objeto.
+		- Permite ocultar la complejidad interna del objeto.
+		- Facilita el mantenimiento y modificación del código.
+
+• ¿Cómo protegiste las propiedades color y marca en la clase Coche?
+	Las propiedades $color  y  $marca  se declararon como  private , lo que las hizo accesibles solo dentro de la clase  Coche . Se proporcionaron métodos públicos getColor() ,  setColor() ,  getMarca() , y  setMarca()  para acceder y modificar estas propiedades de manera controlada.
+
+• ¿Qué son los métodos getter y setter y cómo se usan?  
+	Los métodos getter y setter son métodos públicos que permiten acceder y modificar las propiedades privadas de una clase. Se usan para controlar cómo se acceden y se modifican las propiedades, proporcionando una capa de abstracción y validación si es necesario.
+
+	Getter: Un método que devuelve el valor de una propiedad privada.
+	Setter: Un método que establece el valor de una propiedad privada.
+
+Abstracción 
+• Define abstracción en tus propias palabras.
+	La abstracción es un principio de la POO que permite definir una estructura general para una clase, destacando los atributos y comportamientos esenciales y ocultando los detalles complejos o innecesarios. Proporciona una interfaz común para interactuar con diferentes objetos sin necesidad de conocer sus implementaciones específicas.
+
+• ¿Qué es una clase abstracta y cómo se utilizó en el archivo 05_abstraccion.php? 
+	Es una clase que no puede ser instanciada directamente y que puede contener métodos abstractos, los cuales deben ser implementados por las clases derivadas. 
+En el archivo 05_abstraccion.php , la clase abstracta  Vehiculo  se definió con un método abstracto mostrarInfo() , que luego fue implementado en la clase  Coche .
+
+Constructores y Destructores 
+• ¿Qué es un constructor y cuándo se utiliza? 
+	Un constructor es un método especial que se invoca automáticamente cuando se crea una nueva instancia de una clase. Se utiliza para inicializar las propiedades del objeto y realizar cualquier configuración necesaria.
+
+• ¿Cómo inicializaste las propiedades color y marca en el constructor de la clase Coche?
+	Inicialicé las propiedades $color y $marca en el constructor de la clase Coche pasando los valores como parámetros y asignándolos a las propiedades correspondientes.
+
+• ¿Qué es un destructor y cuándo se ejecuta?
+	Un destructor es un método especial que se invoca automáticamente cuando un objeto es destruido o se sale de su ámbito. Se utiliza para realizar tareas de limpieza, como liberar recursos o cerrar conexiones. En PHP, el destructor se define con el método__destruct ().
+
+
