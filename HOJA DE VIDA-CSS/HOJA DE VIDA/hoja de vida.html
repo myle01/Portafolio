@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width,inicial-scale=1.0">
+        <title>Hoja de Vida</title>
+    </head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 60px;
+          padding: 0;
+          background-color: #ffffff;
+          color: #000000;
+        }
+        header img {
+          width: 300px;
+          height: auto;
+          border-radius: 5px;
+          border: 5px solid #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          margin: 0 auto;
+          margin-bottom: 30px;
+          display: block;
+        }
+        header .header-text {
+          flex: 1;
+          padding: 20px;
+          background-color: #236d65;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          color: #fff;
+        }
+        section {
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          background-color: #e7e7e7;
+        }
+        form {
+          float: center;
+          padding: 20px;
+          background-color: #ffffff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+          display: block;
+          margin-bottom: 5px;
+        }
+        form input, form textarea {
+          width: 100%;
+          padding: 10px 0px;
+          order: 1px solid #898686;
+          border-radius: 3px;
+        }
+        form input[type="submit"] {
+          background-color: #3c3f42;
+          color: #ffffff;
+          border: none;
+          padding: 10px 30px;
+          cursor: pointer;
+        }
+    </style>
+    <body>
+      <header>
+        <div class="container">
+          <img src="picture.jpeg" alt=" " width="400" height="400">
+          <div class="header-text">
+            <h1>Mariel E. Samaniego L.</h1>
+            <h2>Ingeniera en Sistemas Informaticos</h2>
+          </div>
+        </div>
+      </header>
+    
+      <br>
+          <section>
+                <h2>Información Personal</h2>
+                <ul>
+                    <li><strong>Correo Electronico</strong>
+                    </li><a href="marielsa.0126@gmail.com">marielsa.0126@gmail.com</a></li>
+                    <li><strong>Telefono</strong>
+                    </li>6749-7653</li>
+                    <li><strong>Dirección</strong>
+                    </li>Villalobos, Pedregal Calle 1era, casa 13</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h2>Educación</h2>
+                <ul>
+                    <li><strong>Instituto Bern Bautista Bilingüe</strong>
+                    </li>Educacion Basica General | 2009 - 2019</li><br>
+                    </li>Bachiller Comercial | 2019 - 2022</li>
+                    <li><strong>Universidad Latina de Panama</strong>
+                    </li>Licenciatura de Ingenieria de Sistemas Informaticos | 2023 - Cursando Actualmente</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Experiencia Laboral</h2>
+                <ul>
+                    <li><strong>Privivienda, S.A.</strong>
+                    </li>Practicante | 3 - 28 octubre 2022</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Idiomas</h2>
+                <ul>
+                    <li><strong>Español</strong>
+                    </li>Nativo</li>
+                    <li><strong>Inglés</strong>
+                    </li>Intermedio Conversacional</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Liderazgo</li>
+                    <li>Diseño </li>
+                    <li>Redacción</li>
+                    <li>Diseño de páginas web</li>
+                    <li>Creación de contenido</li>
+                    <li>Técnicas de multitarea</li>
+                </ul>
+            
+            </section>
+                <h2>Contacto</h2>
+                <form action="mailto:marielsa.0126@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br><br>
+                    <label for="message">Mensaje:</label><br>
+                    <input type="message" id="message" required><br><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+    </body>
+
